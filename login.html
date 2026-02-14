@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up - Velvet Pages</title>
+  <link rel="stylesheet" href="style.css">           <!-- your existing styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <header>
+    <!-- your normal nav/header -->
+    <h1>Velvet Pages</h1>
+  </header>
+
+  <main style="max-width: 400px; margin: 4rem auto; padding: 2rem; border: 1px solid #ccc; border-radius: 8px;">
+    <h2 id="form-title">Log In</h2>
+
+    <form id="auth-form">
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" required style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"><br>
+
+      <button type="submit" id="submit-btn" style="width: 100%; padding: 0.8rem; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        Log In
+      </button>
+    </form>
+
+    <p style="margin-top: 1rem; text-align: center;">
+      <a href="#" id="toggle-link">Don't have an account? Sign Up</a>
+    </p>
+
+    <p id="message" style="color: red; text-align: center; margin-top: 1rem;"></p>
+  </main>
+
+  <script src="script.js"></script>   <!-- or auth.js if you split it -->
+</body>
+</html>

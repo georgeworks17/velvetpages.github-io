@@ -1,0 +1,1138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    h1, h2 {
+    font-style: italic;
+}
+}
+
+
+/* Body */
+body {
+    background-color: #f4f2f7;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #5a2a82, #3f1d5c);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #5a2a82;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #ddd;
+}
+
+/* Navigation */
+nav {
+    background: #2b153f;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #d8b4ff;
+}
+
+/* Main */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.intro, .features {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.features ul {
+    margin-top: 15px;
+}
+
+.features li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: #2b153f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+}
+/* Blog Styles */
+
+.blog-post h2 {
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #5a2a82;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+/* Contact Form */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background-color: #5a2a82;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3f1d5c;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+/* About Page Icons (Mission & Vision) */
+.feature-with-icon {
+    display: flex;           /* aligns icon and text in a row */
+    align-items: center;     /* vertically centers them */
+    gap: 15px;               /* space between icon and text */
+}
+
+.feature-with-icon img {
+    width: 220px;             /* change this to make icon bigger/smaller */
+    height: 140px;
+}
+.feature-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* more space between icon and text */
+}
+/* About Page Icons Responsiveness */
+@media (max-width: 768px) {
+    .feature-with-icon {
+        flex-direction: column;  /* stack icon above text on small screens */
+        align-items: flex-start; /* align text to left */
+        gap: 10px;               /* less gap for mobile */
+    }
+
+    .feature-with-icon img {
+        width: 40px;  /* smaller icons for mobile */
+        height: 40px;
+    }
+}
+/* Blog Images Responsiveness */
+@media (max-width: 768px) {
+    .blog-image {
+        width: 50%;       /* takes full width of container */
+        max-width: 700%;   /* never exceeds container width */
+        height: 40px;
+        margin: 15px 0;    /* space above and below */
+    }
+}
+.blog-image {
+    width: 50%;       /* smaller than container */
+    max-width: 300px; /* never bigger than 300px */
+    height: 180px;
+}
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        rgba(120, 81, 169, 0.6),
+        rgba(120, 81, 169, 0.6)
+    ),
+    url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    padding: 12px 30px;
+    background-color: #5a2a82;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn-hero:hover {
+    background-color: #3f1d5c;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+/* Home Features Section */
+.features-home {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1 1 250px; /* flexible width for cards */
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #5a2a82;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Responsive Features */
+@media (max-width: 768px) {
+    .features-home {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+.features-home {
+    background: linear-gradient(135deg, #fdf6fb, #f1e9f7);
+    padding: 50px 20px;
+}
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);  /* lifts card slightly */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn-hero {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hero:hover {
+    background-color: #3f1d5c;
+    transform: scale(1.05); /* slightly enlarge */
+}
+/* Home Blog Previews */
+.home-blog {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home-blog h2 {
+    margin-bottom: 40px;
+    color: #5a2a82;
+}
+
+.blog-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    flex: 1 1 250px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    margin: 15px 15px 5px 15px;
+    color: #5a2a82;
+}
+
+.blog-card p {
+    margin: 0 15px 15px 15px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.btn-blog {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    padding: 8px 20px;
+    background-color: #5a2a82;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-blog:hover {
+    background-color: #3f1d5c;
+    transform: scale(1.05);
+}
+
+/* Responsive Blog Previews */
+@media (max-width: 768px) {
+    .blog-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* =========================
+   Global Styles
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF7FD;
+    color: #2D1B3D;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #B89AFF; /* lilac headings */
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background: #7A5CA8;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #E6D9FF;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #F3E8FF; /* soft lilac hover */
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    position: relative;
+    background-image: url('images/background.jpg'); /* your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); /* overlay for readability */
+    z-index: 0;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn, .btn-hero, .btn-blog, .contact-card button {
+    padding: 10px 25px;
+    background-color: #B89AFF; /* lilac */
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .btn-hero:hover, .btn-blog:hover, .contact-card button:hover {
+    background-color: #9673D6; /* darker lilac hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   Features / About Cards
+========================= */
+.feature-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-with-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.feature-with-icon img:hover {
+    transform: scale(1.1);
+}
+.feature-card:hover, .blog-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+/* Responsive About Icons */
+@media (max-width: 768px) {
+    .feature-with-icon {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .feature-with-icon img {
+        width: 40px;
+        height: 40px;
+}
+
+}
+
+
+
+/* Features Home Section */
+.features-home {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    background: linear-gradient(135deg, #F3E8FF, #EADCFF); /* lilac gradient */
+    padding: 50px 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.feature-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card img:hover {
+    transform: scale(1.1); /* subtle zoom on hover */
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #B89AFF; /* lilac */
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* =========================
+   Blog Cards
+========================= */
+.blog-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+    flex: 1 1 250px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+}
+
+.blog-card h3 {
+    margin: 15px 15px 5px 15px;
+    color: #B89AFF;
+}
+
+.blog-card p {
+    margin: 0 15px 15px 15px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.btn-blog {
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    padding: 8px 20px;
+    background-color: #B89AFF;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-blog:hover {
+    background-color: #9673D6;
+    transform: scale(1.05);
+}
+
+/* Responsive Blog Cards */
+@media (max-width: 768px) {
+    .blog-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =========================
+   Contact Form
+========================= */
+.contact-card input, .contact-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #B89AFF;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   Section Background Alternating
+========================= */
+section:nth-child(even) {
+    background-color: #F9F5FF; /* very light lilac */
+}
+
+/* =========================
+   Responsive Adjustments
+========================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .features-home, .blog-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+/* Hero Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1,
+.hero-content p,
+.btn-hero {
+    animation: fadeIn 1s ease forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.3s;
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+.btn-hero {
+    animation-delay: 0.9s;
+}
+.btn:hover, .btn-hero:hover, .btn-blog:hover, .contact-card button:hover {
+    background-color: #9673D6;
+    transform: scale(1.08);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply to feature cards */
+.feature-card {
+    opacity: 0; /* start invisible */
+    animation: slideUp 0.8s ease forwards;
+}
+
+/* Delay for each card */
+.feature-card:nth-child(1) { animation-delay: 0.3s; }
+.feature-card:nth-child(2) { animation-delay: 0.5s; }
+.feature-card:nth-child(3) { animation-delay: 0.7s; }
+.blog-card {
+    opacity: 0;
+    animation: slideUp 0.8s ease forwards;
+}
+
+.blog-card:nth-child(1) { animation-delay: 0.2s; }
+.blog-card:nth-child(2) { animation-delay: 0.4s; }
+.blog-card:nth-child(3) { animation-delay: 0.6s; }
+html {
+    scroll-behavior: smooth;
+}
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none; /* hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #B89AFF; /* lilac */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #9673D6; /* darker lilac */
+    transform: scale(1.1);
+}
+/* Floating Social Bar */
+.social-bar {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 200;
+}
+
+.social-bar a {
+    background-color: #B89AFF; /* lilac */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.social-bar a:hover {
+    background-color: #9673D6;
+    transform: scale(1.1);
+}
+/* Hide social bar on small screens */
+@media (max-width: 600px) {
+    .social-bar {
+        display: none;
+    }/* Hero Title & Motto */
+.hero-title {
+    font-size: 4rem; /* very big title */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.hero-motto {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #F3E8FF; /* soft lilac */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+}
+/* Hero Text Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-motto {
+        font-size: 1.1rem;
+    }
+}
+/* Navigation Brand Styling */
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.nav-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.nav-tagline {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #F3E8FF; /* soft lilac */
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    margin: 0 12px;
+}
+/* Header Responsive */
+@media (max-width: 768px) {
+    .nav-brand {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-title {
+        font-size: 1.4rem;
+    }
+
+    .nav-tagline {
+        font-size: 0.7rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+/* Adjust Hero After Removing Button */
+.hero-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-motto {
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+/* Fade In Animation */
+.hero-content {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 60vh;
+        padding: 30px 15px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-motto {
+        font-size: 1rem;
+    }
+
+    /* General Sections */
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Blog / Cards (if you have them) */
+    .blog-container,
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+/* =========================
+   PORTFOLIO PAGE
+========================= */
+
+.portfolio-hero {
+    background: linear-gradient(
+        rgba(120, 81, 169, 0.7),
+        rgba(120, 81, 169, 0.7)
+    ),
+    url("images/portfolio-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: white;
+
+    padding: 100px 20px;
+}
+
+.portfolio-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.portfolio-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+/* Portfolio Cards */
+
+.portfolio-section {
+    padding: 60px 40px;
+    background: #FAF7FD;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: white;
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-card h3 {
+    margin-bottom: 10px;
+    color: #4B2C6F;
+}
+
+.portfolio-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.portfolio-card a {
+    text-decoration: none;
+    color: #7A5CA8;
+    font-weight: 500;
+}
+
+.portfolio-card a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Supabase client from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="hero">
+    <div class="hero-content">
+
+        <h1 class="hero-title">
+            Welcome to Velvet Pages
+        </h1>
+
+        <p class="hero-motto">
+            Where stories meet elegance
+        </p>
+
+    </div>
+</section>
+/<!-- In index.html or portfolio.html, e.g. in your header/nav -->
+<button id="logout-btn" style="display: none; padding: 8px 16px; background: #e639cf; color: white; border: none; border-radius: 4px; cursor: pointer;">
+  Log Out
+</button>>
+
+        <h1>Velvet Pages</h1>
+        <p>Your Digital Writing & Creative Space</p>
+    </header>
+    <!-- Navigation -->
+<nav>
+    <div class="nav-brand">
+    <h2 class="nav-title">Velvet Pages</h2>
+</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+<a href="portfolio.html">Portfolio</a>
+
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-content">
+    <h1 class="hero-title">Velvet Pages</h1>
+
+    <p class="hero-motto">
+        Crafting Words. Building Voices. Inspiring Stories.
+    </p>
+
+    <a href="contact.html" class="btn-hero">Get in Touch</a>
+</div>
+</section>
+<!-- Features Section -->
+    <section id="explore" class="features-home">
+    <div class="feature-card">
+        <img src="images/mission.png" alt="Brand Voice Icon">
+        <h3>Brand Voice</h3>
+        <p>We help brands build a unique voice and connect with their audience.</p>
+    </div>
+
+    <div class="feature-card">
+        <img src="images/vision.png" alt="Content Creator Icon">
+        <h3>Content Creation</h3>
+        <p>We work with creators to refine messages and engage their followers.</p>
+    </div>
+
+    <div class="feature-card">
+        <img src="images/blog1.jpg" alt="Write-ups Icon">
+        <h3>Professional Write-Ups</h3>
+        <p>Well-crafted write-ups for personal or business needs.</p>
+    </div>
+</section>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>Welcome to Velvet Pages</h2>
+            <p>
+                A place where stories, ideas, and creativity come alive.
+            </p>
+        </section>
+
+        <section class="features">
+            <h2>What We Offer</h2>
+            <ul>
+                <li>Creative Writing</li>
+                <li>Storytelling</li>
+                <li>Blog Articles</li>
+                <li>Digital Publishing</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Velvet Pages. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">↑</button>
+<script>
+    //Get the button
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Show button when user scrolls down 100px
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    scrollTopBtn.addEventListener("click", function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+<!-- Floating Social Bar -->
+<div class="social-bar">
+
+    <a href="mailto:yourmail@gmail.com" title="Email">✉</a>
+
+    <a href="https://wa.me/234XXXXXXXXXX" target="_blank" title="WhatsApp">💬</a>
+
+    <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">📸</a>
+
+</div>
+
+</body>
+</html>
+<!-- Latest Blog Posts -->
+<section class="home-blog">
+    <h2>Latest Blog Posts</h2>
+
+    <div class="blog-preview">
+        <div class="blog-card">
+            <img src="images/blog1.jpg" alt="The Power of Words">
+            <h3>The Power of Words</h3>
+            <p>Explore how storytelling shapes our world and impacts readers.</p>
+            <a href="blog.html" class="btn-blog">Read More →</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="images/blog2.jpg" alt="Finding Your Writing Voice">
+            <h3>Finding Your Writing Voice</h3>
+            <p>Discover how to develop your unique style and connect with readers.</p>
+            <a href="blog.html" class="btn-blog">Read More →</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="images/blog3.jpg" alt="Writing for Brands">
+            <h3>Writing for Brands</h3>
+            <p>Learn how professional writing helps brands connect emotionally.</p>
+            <a href="blog.html" class="btn-blog">Read More →</a>
+        </div>
+    </div>
+</section>
+<button id="logout-btn" style="padding: 0.5rem 1rem; background: #cc0000; color: white; border: none; border-radius: 4px; cursor: pointer;">
+  Log Out
+</button>
